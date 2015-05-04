@@ -1,0 +1,21 @@
+<form {{action 'submit' on='submit'}}>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">Enter you message by link bellow and send one to everyone</h3>
+    </div>
+    <div class="panel-body">
+      {{textarea class="form-control" rows="3" value=controller.newMessage escape-press='clear'}}
+    </div>
+    <div class="panel-footer">
+      <button type='submit' class="btn btn-primary" disabled={{controller.cantSendMessage}}>
+        <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+        Submit
+      </button>
+      <button type='clear' class="btn btn-default" {{action 'clear'}}>
+        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        Clear
+      </button>
+      <span>You can press 'escape' button to cear your message</span>
+    </div>
+  </div>
+</form>

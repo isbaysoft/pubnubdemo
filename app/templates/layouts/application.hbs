@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="header clearfix">
+    {{partial 'layouts/nav'}}
+    <h3 class="text-muted">PubNub demo app with ember</h3>
+  </div>
+  <div class="jumbotron">
+    <h1>Chatting it's piece of cake!!!</h1>
+    <p class="lead">Send message you like and whole world will see it</p>
+    <center>
+      <div class="btn-group btn-group-lg">
+          {{#link-to 'outcome' class="btn btn-success"}}
+            <span class="glyphicon glyphicon-envelope"></span>
+            If you would like to send message click here
+          {{/link-to}}
+          {{#link-to 'income' class="btn btn-info"}}
+            <span class="glyphicon glyphicon-th-list"></span>
+            If you wish to read all messages
+          {{/link-to}}
+      </div>
+    </center>
+  </div>
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      {{outlet}}
+    </div>
+  </div>
+  <footer class="footer">
+    <p>&copy; Company 2015</p>
+  </footer>
+</div> <!-- /container -->
+

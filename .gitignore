@@ -2,11 +2,11 @@
 
 # compiled output
 /dist
-/tmp
+tmp
 
 # dependencies
-/node_modules
-/bower_components
+node_modules/
+bower_components/
 
 # misc
 /.sass-cache
@@ -15,3 +15,10 @@
 /libpeerconnection.log
 npm-debug.log
 testem.log
+!.gitkeep
+.DS_Store
+
+# Text editor and IDE files
+*.sublime-project
+*.sublime-workspace
+.idea

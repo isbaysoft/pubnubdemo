@@ -1,0 +1,11 @@
+<div class="internal-messages">
+  {{#each controller.model as |message|}}
+    <div class="internal-message">
+      <span>{{message.text}}</span>
+    </div>
+  {{else}}
+    <div class="alert alert-info" role="alert">
+      No messages were found
+    </div>
+  {{/each}}
+</div>
